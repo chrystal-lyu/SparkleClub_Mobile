@@ -1,0 +1,105 @@
+.full-post {
+    background: white;
+}
+
+.user {
+    background: #f1f1f1;
+}
+
+.user-icon {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://lh3.googleusercontent.com/-C8azr_kgw98/AAAAAAAAAAI/AAAAAAAAAAA/AMp5VUpap5kf55rFBzyh1d2pTf-v35ig6Q/s192-c-mo-md/photo.jpg");
+}
+
+.user-info {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+	margin-left: 90px;
+}
+
+.user-info a {
+    color: #545454;
+}
+
+.user-info a:hover {
+    color: #ff42c1;
+}
+
+.user-name {
+    color: #545454;
+    font-weight: bold;
+}
+
+.user-rep {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.post-title {
+	font-weight: bold;
+	font-size: 1.8rem;
+	padding: 20px 20px 0 20px;
+	text-align: center;
+}
+
+.post-likes {
+    color: grey;
+    text-align: center;
+}
+
+.post-body {
+    padding: 0 20px;
+}
+
+.img-container {
+	margin: 20px auto;
+}
+
+.post-body p {
+	font-size: 1.3rem;
+}
+
+ul {
+    margin: auto;
+    list-style-type: none;  
+}
+
+.post-comments a {
+    color: #ff42c1;
+}
+
+.post-comments .user-info {
+    margin-left: 130px;
+}
+
+.post-comments a:hover {
+    color: #d695ef;
+}
+
+.comments-header {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.comments {
+    padding: 0 20px;
+}
+
+.comment {
+    padding: 10px;
+    border-top: 1px solid #ebebf0;
+}
+
+.user-comment {
+    width: 80%;
+}

@@ -27,7 +27,7 @@
     text-align: center;
 }
 
-a {
+#header a {
     border: 1px white solid;
     border-radius: 5px;
     color: white;
@@ -35,6 +35,6 @@ a {
     padding: 10px;
 }
 
-a:hover {
+#header a:hover {
     color: white;
 }

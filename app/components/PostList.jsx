@@ -1,14 +1,17 @@
 import React from 'react';
 
+import PopularPosts from 'PopularPosts';
+import MainPosts from 'MainPosts';
+
 export class PostList extends React.Component {
   render () {
 		return (
-			<div className="container ">
+			<div className="container">
 				<div className="large-7 columns large-push-3 post-list-main">
-					Main Feeds
+					<MainPosts/>
 				</div>
 				<div className="large-3 columns large-pull-7 post-list-popular">
-					Popular Feeds
+					<PopularPosts/>
 				</div>
 				<div className="large-2 columns post-list-sidebar">
 					<img id="app-icon" src="http://cm1.narvii.com/6517/7613b38f6e4498e31a449dba18e788fdc278d71a_120.jpg" alt="app-icon"/>

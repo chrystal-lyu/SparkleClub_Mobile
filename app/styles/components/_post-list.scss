@@ -2,7 +2,7 @@
     margin: 0 auto;
 }
 
-img {
+.post-list-sidebar img {
     display: block;
     margin: auto;
     width: auto;
@@ -19,15 +19,14 @@ img {
     text-align: center;
 }
 
-.post-list-main {
-    border: 3px green solid;
-    height: 80vh;
-}
-
 .post-list-popular {
-    border: 3px green solid;
+    margin-top: 20px;
 }
 
 #main {
     color: black;
+}
+
+#everything {
+    background: #f1f1f1;
 }
