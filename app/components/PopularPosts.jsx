@@ -14,8 +14,26 @@ export class PopularPosts extends React.Component {
 			backgroundImage: "url('https://chinkpopped.files.wordpress.com/2008/12/november.jpg')"
 		};
 		return (
-			<div className="container">
+			<div className="popular-container">
 				<h5 className="popular-title">&#9733; Popular Posts</h5>
+				<div className="popular-post" style={popularA}>
+					<div className="popular-post-title">Invincible World Tour 2017</div>
+				</div>
+				<div className="popular-post" style={popularB}>
+					<div className="popular-post-title">Jay Chou Bedtime Stories</div>
+				</div>
+				<div className="popular-post" style={popularC}>
+					<div className="popular-post-title">November's Chopin Alum Release</div>
+				</div>
+				<div className="popular-post" style={popularA}>
+					<div className="popular-post-title">Invincible World Tour 2017</div>
+				</div>
+				<div className="popular-post" style={popularB}>
+					<div className="popular-post-title">Jay Chou Bedtime Stories</div>
+				</div>
+				<div className="popular-post" style={popularC}>
+					<div className="popular-post-title">November's Chopin Alum Release</div>
+				</div>
 				<div className="popular-post" style={popularA}>
 					<div className="popular-post-title">Invincible World Tour 2017</div>
 				</div>

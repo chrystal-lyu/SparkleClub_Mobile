@@ -4,50 +4,43 @@
 
 .user {
     background: #f1f1f1;
-}
+    padding: 10px;
+    .user-icon .avatar{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 50%;
+    }
+    .user-info {
+        margin-left: 60px;
+        margin-top: -45px;
+        position: absolute;
+        a {
+            color: #545454;
+        }
 
-.user-icon {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center center;
-    background-image: url("https://lh3.googleusercontent.com/-C8azr_kgw98/AAAAAAAAAAI/AAAAAAAAAAA/AMp5VUpap5kf55rFBzyh1d2pTf-v35ig6Q/s192-c-mo-md/photo.jpg");
-}
+        a:hover {
+            color: #ff42c1;
+        }
+        .user-name {
+            color: #545454;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
 
-.user-info {
-    position: absolute;
-    left: 0;
-    display: inline-block;
-	margin-left: 90px;
-}
-
-.user-info a {
-    color: #545454;
-}
-
-.user-info a:hover {
-    color: #ff42c1;
-}
-
-.user-name {
-    color: #545454;
-    font-weight: bold;
-}
-
-.user-rep {
-    font-size: 0.8rem;
-    color: grey;
+        .user-rep {
+            font-size: 0.7rem;
+            color: grey;
+        }
+    }
 }
 
 .post-title {
 	font-weight: bold;
 	font-size: 1.8rem;
 	padding: 20px 20px 0 20px;
-	text-align: center;
+    text-align: center;
 }
 
 .post-likes {
@@ -76,10 +69,6 @@ ul {
     color: #ff42c1;
 }
 
-.post-comments .user-info {
-    margin-left: 130px;
-}
-
 .post-comments a:hover {
     color: #d695ef;
 }
@@ -96,10 +85,45 @@ ul {
 }
 
 .comment {
-    padding: 10px;
     border-top: 1px solid #ebebf0;
-}
+    padding: 10px;
+    .comment-avatar .avatar{
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 50%;
+    }
+    .comment-body {
+        margin-left: 60px;
+        margin-top: -45px;
+        .comment-header {
+            color: #545454;
+            .user-link {
+                color: #ff42c1;
+                font-weight: bold;
+            }
 
-.user-comment {
-    width: 80%;
+            .user-link:hover {
+                background-color: lightgrey;
+                border-radius: 10%;
+            }
+
+            .comment-info {
+                float: right;
+                .comment-date {
+                    font-size: 0.8rem;
+                }
+                .comment-likes {
+                    font-size: 0.8rem;
+                    padding-left: 10px;
+                }
+
+            }
+        }
+
+        .comment-content {
+            color: #444;
+            word-wrap: break-word;
+        }
+    }
 }

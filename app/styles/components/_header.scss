@@ -1,21 +1,25 @@
 #header {
+    position: fixed;
+    width: 100%;
     background:	#6b41e8;
     color: white;
-    height: 70px;
-    font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+    font-family: Verdana, Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+    z-index: 9999; 
 }
 
 #title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 5px;
+    font-family: Verdana;
 }
 
 #title-description {
     font-size: 0.8rem;
+    font-family: Verdana;
 }
 
 .header-left {
+    padding: 8px;
     float: left;
     width: 80%;
 }

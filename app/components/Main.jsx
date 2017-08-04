@@ -5,18 +5,18 @@ export class Main extends React.Component {
 		return (
 			<div id="everything">
 				<div id="header" className="container">
-					<div className="row">
+					<nav className="row">
 						<div className="header-left">
 							<div id="title">Sparkle Club</div>
-							<p id="title-description">A lovely place where you can share your love for Kpop with people from all over the world!</p>
+							<div className="hide-for-small-only" id="title-description">A lovely place where you can share your love for Jay Chou with people from all over the world!</div>
 						</div>
 						<div className="header-right">
 							<a href="/">Get App</a>
 						</div>
-					</div>
+					</nav>
 				</div>
 
-				<div className="row" id="main">
+				<div id="main" className="container">
 					{React.cloneElement(this.props.children, this.props)}
 				</div>
 
