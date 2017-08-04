@@ -15,7 +15,7 @@ export class PopularPosts extends React.Component {
 		};
 		return (
 			<div className="popular-container">
-				<h5 className="popular-title">&#9733; Popular Posts</h5>
+				<h5 className="section-header">&#9733; Popular Posts</h5>
 				<div className="popular-post" style={popularA}>
 					<div className="popular-post-title">Invincible World Tour 2017</div>
 				</div>

@@ -73,7 +73,7 @@ ul {
     color: #d695ef;
 }
 
-.comments-header {
+.section-header {
     padding: 20px;
     font-size: 1.3rem;
     font-weight: bold;
@@ -88,6 +88,7 @@ ul {
     border-top: 1px solid #ebebf0;
     padding: 10px;
     .comment-avatar .avatar{
+        object-fit: cover;
         width: 50px;
         height: 50px;
         border: 2px solid rgba(255,255,255,0.5);
@@ -124,6 +125,60 @@ ul {
         .comment-content {
             color: #444;
             word-wrap: break-word;
+        }
+    }
+}
+
+.featured-pages {
+    border: 1px solid #ebebf0;
+
+    a {
+        color: #444;
+    }
+
+    .featured-page-content {
+        height: 180px;
+        position: relative;
+        padding: 15px 20px 15px 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebebf0;
+        &:hover {
+            background: #e9e6fb;
+            transition: .3s ease-in;
+        }
+        .page-image {
+            .gallery {
+                object-fit: cover;
+                height: 140px;
+                width: 140px;
+                position: absolute;
+            }
+            .avatar {
+                object-fit: cover;
+                width: 50px;
+                height: 50px;
+                border: 2px solid rgba(255,255,255,0.5);
+                border-radius: 50%;
+                position: absolute;
+                left: 120px;
+                top: 120px;
+            }
+
+        }
+        h5 {
+            font-weight: bold;
+        }
+        .featured-text {
+            margin: 0 100px 0 180px;
+        }
+
+        .post-info {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            .num-likes {
+                padding-left: 10px;
+            }
         }
     }
 }
