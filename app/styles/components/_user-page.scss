@@ -1,0 +1,101 @@
+.user-page {
+  background: white;
+}
+.user-info {
+  position: relative;
+  height: 560px;
+  .user-cover {
+    
+    .user-cover-img {
+      background-color: rgba(255,255,255,0.5);
+      position: absolute;
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+  }
+  .user-profile {
+    position: absolute;
+    width: 100%;
+    margin: 26% auto;
+    text-align: center;
+    .user-icon .avatar{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 50%;
+    }
+    .user-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px grey;
+    }
+    .membership {
+      font-size: 1.2rem;
+      text-shadow: 0 0 10px grey;
+    }
+    .since-date {
+      font-size: 1.2rem;
+      text-shadow: 0 0 10px grey;
+    }
+  }
+
+  .counter-info {
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .counter-rep {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .counter-followers {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .counter-following {
+      text-align: center;
+      margin: 10px auto;
+    }
+
+    .number {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .counter-label {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.member-container {
+  background-color: white;
+  .members {
+    .avatar{
+      object-fit: cover;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 50%;
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+    li {
+      float: left;
+    }
+  }
+  .members:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

@@ -5,9 +5,9 @@ export class MainPosts extends React.Component {
 		return (
 			<div className="full-post">
 				<div className="user">
-					<div className="user-icon"><img className="avatar" src="http://tu.dd321.com/dianyingpu/tuji/ZhiQingChun2JiaoYuanRePaiXueShengChuZuYa202609.jpg"/></div>
+					<div className="user-icon"><a href="/#/user"><img className="avatar" src="http://tu.dd321.com/dianyingpu/tuji/ZhiQingChun2JiaoYuanRePaiXueShengChuZuYa202609.jpg"/></a></div>
 					<div className="user-info">	
-						<div className="user-name"> <a>I_LOVE_JAY</a></div>
+						<div className="user-name"><a href="/#/user">I_LOVE_JAY</a></div>
 						<div className="user-rep"> Rep 289 </div>
 					</div>
 				</div> 
