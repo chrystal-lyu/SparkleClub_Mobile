@@ -1,7 +1,18 @@
+import axios from 'axios';
 import React from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+
+import * as actions from 'actions';
 
 export class Main extends React.Component {
-  render () {
+	componentWillMount() {
+		axios.get("http://127.0.0.1:3000/test").then(resp => {
+			this.props.fetchData(resp.data);
+		})
+	}
+
+  render() {
 		return (
 			<div id="everything">
 				<div id="header" className="container">
@@ -28,4 +39,14 @@ export class Main extends React.Component {
 	};
 };
 
-export default Main;
+const mapStatetoProps = (state) => {
+	return {
+		data: state.data
+	}
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return bindActionCreators(actions, dispatch)
+};
+
+export default connect(mapStatetoProps, mapDispatchToProps)(Main);
