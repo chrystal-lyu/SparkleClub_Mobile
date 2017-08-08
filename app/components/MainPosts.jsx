@@ -34,7 +34,7 @@ export class MainPosts extends React.Component {
 						<div className="comment-body">	
 							<div className="comment-header">
 								<a className="user-link">{comment.author.nickName}</a>
-								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).fromNow()}</span><span className="comment-likes"><span className="fa">&#xf004;</span> {comment.likesCount}</span></div>
+								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).lang('zh-cn').fromNow()}</span><span className="comment-likes"><span className="fa">&#xf08a;</span> {comment.likesCount}</span></div>
 							</div>
 							<div className="comment-content">{comment.content}</div>
 						</div>
@@ -54,7 +54,7 @@ export class MainPosts extends React.Component {
 							<div className="user-rep">{author.reputation} 声望</div>
 						</div>
 						<div className="post-info">
-							<div className="post-date">{moment(new Date(data.createdAt)).fromNow()}</div>
+							<div className="post-date">{moment(new Date(data.createdAt)).lang('zh-cn').fromNow()}</div>
 							<div className="post-likes"><span className="fa">&#xf004;</span> {data.likesCount}</div>
 						</div>
 					</div> 
@@ -66,9 +66,45 @@ export class MainPosts extends React.Component {
 					</div>
 
 					<div className="post-comments">
-						<div className="section-header"><span className="fa">&#xf0e5;</span> {data.commentsCount} comments</div>
+						<div className="section-header"><span className="fa">&#xf0e5;</span> {data.commentsCount} 评论</div>
 						<ul>
 							{_renderComment()}
+							<li className="comment">
+								<div className="comment-avatar"><img className="avatar" src='http://imgcache.qq.com/music/photo/album_300/17/300_albumpic_8217_0.jpg'/></div>
+								<div className="comment-body">	
+									<div className="comment-header">
+										<a className="user-link">I'm Nick Name</a>
+										<div className="comment-info"><span className="comment-date">5 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 3</span></div>
+									</div>
+									<div className="comment-content">老板娘生日快乐！</div>
+									<div className="sub-comments-wrapper">
+										<div className="sub-comments">
+											<ul>
+												<li className="comment">
+													<div className="comment-avatar"><img className="avatar" src='https://media.tenor.com/images/b3570952aaae135cb2acafe68d03e276/tenor.gif'/></div>
+													<div className="comment-body">	
+														<div className="comment-header">
+															<a className="user-link">Jay</a>
+															<div className="comment-info"><span className="comment-date">3 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 1</span></div>
+														</div>
+														<div className="comment-content">祝祝祝！！！</div>
+													</div>
+												</li>
+												<li className="comment">
+													<div className="comment-avatar"><img className="avatar" src='https://365cpop.files.wordpress.com/2013/03/jay-chou-opus-12-shou-yu.jpg'/></div>
+													<div className="comment-body">	
+														<div className="comment-header">
+															<a className="user-link">Crystal</a>
+															<div className="comment-info"><span className="comment-date">1 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 0</span></div>
+														</div>
+														<div className="comment-content">Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis. </div>
+													</div>
+												</li>												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 
