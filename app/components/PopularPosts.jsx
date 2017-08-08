@@ -13,6 +13,7 @@ export class PopularPosts extends React.Component {
 		const popularC = {
 			backgroundImage: "url('https://chinkpopped.files.wordpress.com/2008/12/november.jpg')"
 		};
+		
 		return (
 			<div className="popular-container">
 				<h5 className="section-header">&#9733; Popular Posts</h5>

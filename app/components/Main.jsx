@@ -15,14 +15,15 @@ export class Main extends React.Component {
   render() {
 		return (
 			<div id="everything">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 				<div id="header" className="container">
 					<nav className="row">
 						<div className="header-left">
-							<div id="title">Sparkle Club</div>
-							<div className="hide-for-small-only" id="title-description">A lovely place where you can share your love for Jay Chou with people from all over the world!</div>
+							<div id="title">全职高手</div>
+							<div className="hide-for-small-only" id="title-description">火花社</div>
 						</div>
 						<div className="header-right">
-							<a href="/">Get App</a>
+							<a href="/"><span className="fa">&#xf10b;</span> 下载APP</a>
 						</div>
 					</nav>
 				</div>

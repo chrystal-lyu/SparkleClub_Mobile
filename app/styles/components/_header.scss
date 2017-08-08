@@ -1,42 +1,47 @@
 #header {
+    height: 140px;
     position: fixed;
     width: 100%;
-    background:	#6b41e8;
+    background:	$lightpurple;
     color: white;
     font-family: Verdana, Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
     z-index: 9999; 
 }
 
 #title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     font-family: Verdana;
 }
 
 #title-description {
-    font-size: 0.8rem;
+    font-size: 2rem;
     font-family: Verdana;
 }
 
 .header-left {
-    padding: 8px;
+    padding: 10px 0 10px 20px;
     float: left;
-    width: 80%;
+    width: auto;
 }
 
 .header-right {
     float: right;
-    width: 20%;
-    line-height: 70px;
+    width: auto;
+    line-height: 140px;
     text-align: center;
+    .fa {
+        font-size: 3rem;
+    }
 }
 
 #header a {
-    border: 1px white solid;
-    border-radius: 5px;
+    border: 2px white solid;
+    border-radius: 20px;
     color: white;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 2.5rem;
+    margin-right: 20px;
+    padding: 20px;
 }
 
 #header a:hover {

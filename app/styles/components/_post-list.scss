@@ -2,79 +2,33 @@
     margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
-  .post-list-main {
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .post-list-main {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .post-list-main {
-    margin-left: 0;
-  }
-}
-
 .post-list-main {
-    margin-top: 80px;
-}
-
-
-@media (min-width: 1200px) {
-  .post-list-sidebar {
-    width: 11%;
-    position: fixed;
-  }
-}
-
-@media (max-width: 1200px) {
-  .post-list-sidebar {
-    visibility: hidden;
-    display: none;
-  }
+    margin-top: 140px;
 }
 
 .post-list-sidebar {
-    margin-top: 100px;
-}
+    padding: 80px;
+    img {
+        display: block;
+        width: auto;
+    }   
+    .side-info {
+        margin-left: 350px;
+        margin-top: -270px;
+        position: absolute;
+        #app-title {
+            font-size: 3rem;
+            margin-top: 10px;
+        }
 
-.post-list-sidebar img {
-    display: block;
-    margin: auto;
-    width: auto;
-}
-
-#app-title {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    text-align: center;
-}
-
-#app-description {
-    color: grey;
-    text-align: center;
-}
-
-@media (min-width: 1200px) {
-    .post-list-popular {
-        margin-left: 0;
+        #app-description {
+            font-size: 2rem;
+            color: grey;
+        }
     }
-}
-
-@media (max-width: 1199px) {
-  .post-list-popular {
-    margin-right: 80px;
-  }
-}
-
-@media (max-width: 1024px) {
-    .post-list-popular {
-        margin-right: 0;
+    .download-icon {
+        margin: 50px auto;
+        width: 400px;
     }
 }
 
@@ -87,6 +41,14 @@
 
 #main {
     color: #444;
+    min-height: 93.2vh;
+}
+
+.section-header {
+    padding: 20px 60px;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: grey;
 }
 
 #everything {

@@ -1,4 +1,3 @@
-var axios = require('axios');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
@@ -18,12 +17,6 @@ store.subscribe(() => {
   var state = store.getState();
   console.log('New State => ', state);
 });
-
-// axios.get("http://127.0.0.1:3000/test").then(resp => {
-//     console.log("in browser, response is => ", resp.data)
-//     store.dispatch(actions.fetchData(resp.data));
-//   })
-
 
 ReactDOM.render(
   <Provider store={store}>

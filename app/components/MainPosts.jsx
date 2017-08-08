@@ -34,7 +34,7 @@ export class MainPosts extends React.Component {
 						<div className="comment-body">	
 							<div className="comment-header">
 								<a className="user-link">{comment.author.nickName}</a>
-								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).fromNow()}</span><span className="comment-likes">&hearts; {comment.likesCount}</span></div>
+								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).fromNow()}</span><span className="comment-likes"><span className="fa">&#xf004;</span> {comment.likesCount}</span></div>
 							</div>
 							<div className="comment-content">{comment.content}</div>
 						</div>
@@ -46,30 +46,34 @@ export class MainPosts extends React.Component {
 		if (Object.keys(this.props.data).length !== 0) {
 			return (
 				<div className="full-post">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 					<div className="user">
 						<div className="user-icon"><a href="/#/user"><img className="avatar" src={author.avatarUrl}/></a></div>
 						<div className="user-info">	
 							<div className="user-name"><a href="/#/user">{author.nickName}</a></div>
-							<div className="user-rep"> Rep {author.reputation} </div>
+							<div className="user-rep">{author.reputation} 声望</div>
+						</div>
+						<div className="post-info">
+							<div className="post-date">{moment(new Date(data.createdAt)).fromNow()}</div>
+							<div className="post-likes"><span className="fa">&#xf004;</span> {data.likesCount}</div>
 						</div>
 					</div> 
 
 					<div className="post-body">
 						<div className="post-title">{data.title}</div>
-						<div className="post-likes">&hearts; {data.likesCount}</div>
-						<div>{moment(new Date(data.createdAt)).format('MMM Do YYYY @ h:mm a')}</div>
 						<hr/>
 						{_renderContent()} 
 					</div>
 
 					<div className="post-comments">
-						<div className="section-header">&#128488; {data.commentsCount} comments</div>
+						<div className="section-header"><span className="fa">&#xf0e5;</span> {data.commentsCount} comments</div>
 						<ul>
 							{_renderComment()}
 						</ul>
 					</div>
 
-					<div className="featured-pages">
+
+					{/* <div className="featured-pages">
 						<div className="section-header">&#9733; Popular Pages</div>
 
 						<a className="featured-page">
@@ -136,7 +140,7 @@ export class MainPosts extends React.Component {
 							</div>
 						</a>
 
-					</div>
+					</div> */}
 				</div>
 			)
 		} else {
