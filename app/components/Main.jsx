@@ -33,7 +33,7 @@ export class Main extends React.Component {
 				</div>
 
 				<div id="footer" className="container">
-					<strong>SparkleClub © 2017</strong>
+					<strong>火花社 © 2017</strong>
 				</div>
 			</div>
 		);

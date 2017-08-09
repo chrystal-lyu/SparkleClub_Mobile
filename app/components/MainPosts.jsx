@@ -34,7 +34,7 @@ export class MainPosts extends React.Component {
 						<div className="comment-body">	
 							<div className="comment-header">
 								<a className="user-link">{comment.author.nickName}</a>
-								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).lang('zh-cn').fromNow()}</span><span className="comment-likes"><span className="fa">&#xf08a;</span> {comment.likesCount}</span></div>
+								<div className="comment-info"><span className="comment-date">{moment(new Date(comment.author.createdAt)).locale('zh-cn').fromNow()}</span><span className="comment-likes"><span className="fa">&#xf08a;</span> {comment.likesCount}</span></div>
 							</div>
 							<div className="comment-content">{comment.content}</div>
 						</div>
@@ -54,7 +54,7 @@ export class MainPosts extends React.Component {
 							<div className="user-rep">{author.reputation} 声望</div>
 						</div>
 						<div className="post-info">
-							<div className="post-date">{moment(new Date(data.createdAt)).lang('zh-cn').fromNow()}</div>
+							<div className="post-date">{moment(new Date(data.createdAt)).locale('zh-cn').fromNow()}</div>
 							<div className="post-likes"><span className="fa">&#xf004;</span> {data.likesCount}</div>
 						</div>
 					</div> 
