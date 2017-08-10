@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import * as actions from 'actions';
 
@@ -9,7 +9,7 @@ export class Main extends React.Component {
 	componentWillMount() {
 		axios.get("http://127.0.0.1:3000/test").then(resp => {
 			this.props.fetchData(resp.data);
-		})
+		});
 	}
 
   render() {
@@ -37,8 +37,8 @@ export class Main extends React.Component {
 				</div>
 			</div>
 		);
-	};
-};
+	}
+}
 
 const mapStatetoProps = (state) => {
 	return {

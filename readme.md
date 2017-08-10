@@ -1,1 +1,1 @@
-Boilerplate React App
+Mobile View for Huohuashe App share post link

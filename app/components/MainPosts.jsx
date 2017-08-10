@@ -48,9 +48,9 @@ export class MainPosts extends React.Component {
 				<div className="full-post">
 					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 					<div className="user">
-						<div className="user-icon"><a href="/#/user"><img className="avatar" src={author.avatarUrl}/></a></div>
+						<div className="user-icon"><a href="#"><img className="avatar" src={author.avatarUrl}/></a></div>
 						<div className="user-info">	
-							<div className="user-name"><a href="/#/user">{author.nickName}</a></div>
+							<div className="user-name"><a href="#">{author.nickName}</a></div>
 							<div className="user-rep">{author.reputation} 声望</div>
 						</div>
 						<div className="post-info">
@@ -177,6 +177,7 @@ export class MainPosts extends React.Component {
 						</a>
 
 					</div> */}
+
 				</div>
 			)
 		} else {
