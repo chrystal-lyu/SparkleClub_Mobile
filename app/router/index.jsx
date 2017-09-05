@@ -9,7 +9,6 @@ export default (
 	<Router history={hashHistory}>
 		<Route path="/" component={Main}>
 			<IndexRoute component={PostList}/>
-				{/* <Route path="posts/:postId" component={PostDetail}/>*/}
 			<Route path="user" component={UserPage}/> 
 		</Route>
 	</Router>

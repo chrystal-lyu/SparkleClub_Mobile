@@ -21,7 +21,6 @@ export class PostList extends React.Component {
 						<div id="app-title">全职高手 x 火花社</div>
 						<p id="app-description">A lovely place where you can share your love for Jay Chou with people from all over the world!</p>
 					</div>
-					<a><img className="download-icon" src="http://rynoss.com/wp-content/uploads/2011/07/kfm-appstore-button.png" alt="ios"/></a>
 					<a><img className="download-icon" src="http://www.ayoba.com/Content/images/theme/ayobadotcom_android.png" alt="android"/></a>
 				</div> 
 				
